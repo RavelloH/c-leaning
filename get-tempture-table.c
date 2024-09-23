@@ -4,8 +4,8 @@
 
 int main(void)
 {
-    int fahr, celsius;
-    int lower, upper, step;
+    double celsius;
+    int lower, upper, step, fahr;
 
     printf("Lower : ");
     scanf("%d", &lower);
@@ -22,8 +22,8 @@ int main(void)
     printf("Fahr\tCels\n");
     while (fahr <= upper)
     {
-        celsius = 5 * (fahr - 32) / 9;
-        printf("%3d  %6d\n", fahr, celsius);
+        celsius = 5.0 * (fahr - 32) / 9;
+        printf("%4d\t%4.1f\n", fahr, celsius);
         fahr = fahr + step;
     }
 }
