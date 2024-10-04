@@ -1,4 +1,4 @@
-// 生成阶乘表
+// 生成乘方表
 #include<stdio.h>
 double powerd(int x,int n) {
     double result = x;
