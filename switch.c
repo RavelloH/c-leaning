@@ -1,3 +1,4 @@
+// switch相关应用之自动售货机
 #include <stdio.h>
 
 int main(void)
@@ -30,7 +31,7 @@ int main(void)
             price = 4.0;
             break;
         case 4:
-            price = 3.5;
+            price = 3.5;    
             break;
         default:
             price = 0.0;

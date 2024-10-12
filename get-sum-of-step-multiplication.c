@@ -1,3 +1,4 @@
+// 求阶乘的和
 #include <stdio.h>
 
 long long factorial(int n) {

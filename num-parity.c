@@ -1,3 +1,4 @@
+// 输入一堆数，判断奇偶个数
 #include <stdio.h>
 
 int main()
