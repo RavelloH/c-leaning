@@ -12,6 +12,8 @@ int main(void) {
         number = - number;
     }
 
+    // 计算数字长度
+    // 原理：不断除以10，直到小于10
     while (number > 9) {
         number = number / 10;
         length ++;

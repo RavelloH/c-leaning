@@ -2,6 +2,8 @@
 #include<stdio.h>
 double powerd(int x,int n) {
     double result = x;
+
+    // 计算x的n次方
     for (int i=0;i<=n;i++) {
         result = result * x;
     }

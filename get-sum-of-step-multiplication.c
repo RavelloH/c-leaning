@@ -1,6 +1,7 @@
 // 求阶乘的和
 #include <stdio.h>
 
+// 求阶乘
 long long factorial(int n) {
     if (n == 0 || n == 1) {
         return 1;
@@ -8,6 +9,7 @@ long long factorial(int n) {
     return n * factorial(n - 1);
 }
 
+// 求1!+2!+3!+...+n!
 long long sum_of_factorials(int n) {
     long long sum = 0;
     for (int i = 1; i <= n; i++) {

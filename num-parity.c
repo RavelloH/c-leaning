@@ -1,4 +1,4 @@
-// 输入一堆数，判断奇偶个数
+// 杈撳叆n涓暣鏁帮紝缁熻鍏朵腑濂囨暟鍜屽伓鏁扮殑涓暟
 #include <stdio.h>
 
 int main()
@@ -15,8 +15,7 @@ int main()
         else
             odd++;
     }
-    printf("奇数个数：%d\n", odd);
-    printf("偶数个数：%d\n", even);
+    printf("odd:%d\neven:%d\n", odd, even);
     return 0;
 
 }

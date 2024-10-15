@@ -8,6 +8,7 @@ int main()
 {
 
     int number, guess, attempts = 0;
+    // 生成1-100之间的随机数,以当前时间为种子
     srand(time(0));
     number = rand() % 100 + 1;
 
