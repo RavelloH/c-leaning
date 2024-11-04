@@ -1,4 +1,4 @@
-// 输入n个整数，统计其中奇数和偶数的个数
+
 #include <stdio.h>
 
 int main()

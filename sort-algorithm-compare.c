@@ -74,6 +74,7 @@ void heapify(int arr[], int n, int i) {
     }
 }
 
+// 堆排序
 void heap_sort(int arr[], int n) {
     for (int i = n / 2 - 1; i >= 0; i--) heapify(arr, n, i);
     for (int i = n - 1; i > 0; i--) {
@@ -84,6 +85,7 @@ void heap_sort(int arr[], int n) {
     }
 }
 
+// 冒泡排序
 void bubble_sort(int arr[], int size) {
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
@@ -96,6 +98,7 @@ void bubble_sort(int arr[], int size) {
     }
 }
 
+//  选择排序
 void selection_sort(int arr[], int size) {
     for (int i = 0; i < size - 1; i++) {
         int min = i;
