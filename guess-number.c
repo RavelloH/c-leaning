@@ -1,19 +1,17 @@
-// 输入1-100之间的一个整数，猜出这个整数是多少，给出相应的提示信息，英文提示
+// 202411100807 韩雨昊
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
+#define N 10
+
 int main()
 {
-
     int number, guess, attempts = 0;
-    // 生成1-100之间的随机数,以当前时间为种子
     srand(time(0));
     number = rand() % 100 + 1;
-
     printf("I have a number between 1 and 100. Can you guess it?\n");
-
     do
     {
         printf("Enter your guess: ");
@@ -22,17 +20,28 @@ int main()
 
         if (guess > number)
         {
-            printf("Too high! Try again.\n");
+            printf("Too big\n");
         }
         else if (guess < number)
         {
 
-            printf("Too low! Try again.\n");
+            printf("Too small\n");
         }
         else
         {
-            printf("Congratulations! You guessed the number in %d attempts.\n", attempts);
+            if (attempts == 1)
+            {
+                printf("Bingo!\n");
+            }
+            if (attempts > 1 && attempts <= 3) {
+                printf("Lucky you!\n");
+            }
+            if (attempts > 3 && attempts <= N) {
+                printf("Good job!\n");
+            }
+            return 0;
         }
-    } while (guess != number);
+    } while (guess != number && attempts < N && guess > 0);
+    printf("Game over!");
     return 0;
 }
